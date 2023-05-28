@@ -16,8 +16,10 @@
     <title>Relcon AGS site visit details</title>
   </head>
   <body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
-      <h1 class="card-header">Fill site visit details :</h1>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+     
       <form class="row g-2 " method="post" action="https://script.google.com/macros/s/AKfycbyDcPk95rtrYNgVhOXWF7Armv6xru9LQXCjbzK_reV1hPwzG_8YB8qfb_55wyfnC3AcfQ/exec">
+        <h1 class="card-header">Fill site visit details :</h1>
         <div class="col-md-2 ">
           <label for="rocode" class="form-label">Ro Code :</label>
           <input type="number" class="form-control" id="rocode" name="ROCODE" required>
@@ -415,7 +417,7 @@
         
 
       <!-- Submit details -->
-        <div class="d-grid gap-2 col-6 mx-auto">
+        <div class="d-grid gap-2 col-6 mx-auto mt-4">
           <button type="submit" class="btn btn-outline-success btn-lg">Submit Details</button>
     
 
@@ -423,8 +425,11 @@
         
             <button type="reset" class="btn btn-outline-danger btn-lg">RESET</button>
           </div>
+          
+          <div class="d-flex align-items-center justify-content-center pt-4"><p>Copyright © 2023-24 Powered by Nikhil Trivedi Version 28.05</p></div>
 
       </form>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
