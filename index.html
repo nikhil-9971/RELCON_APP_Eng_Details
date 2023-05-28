@@ -18,7 +18,7 @@
   <body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
     <div class="container min-vh-100 d-flex justify-content-center align-items-center">
      
-      <form class="row g-2 " method="post" action="https://script.google.com/macros/s/AKfycbyDcPk95rtrYNgVhOXWF7Armv6xru9LQXCjbzK_reV1hPwzG_8YB8qfb_55wyfnC3AcfQ/exec">
+      <form class="row g-2 " method="post" action="https://script.google.com/macros/s/AKfycbzFN6OVS-QxQcor-RPd3UvvfkgGGz0VWuY0al8R-yjCrKD2CcajPZpRoKGiuXdOboG_/exec">
         <h1 class="card-header">Fill site visit details :</h1>
         <div class="col-md-2 ">
           <label for="rocode" class="form-label">Ro Code :</label>
@@ -33,7 +33,7 @@
 
         <div class="col-md-2">
             <label for="phase" class="form-label">Phase :</label>
-            <select id="phase" class="form-select" name="PHASE">
+            <select id="phase" class="form-select" name="PHASE" required>
               <option selected>Select Phase</option>
               <option>PH-X</option>
               <option>PH-XI</option>
@@ -46,7 +46,7 @@
 
           <div class="col-md-3">
             <label for="earthpit" class="form-label">Engineer Name :</label>
-            <select id="earthpit" class="form-select" name="ENGINEER">
+            <select id="earthpit" class="form-select" name="ENGINEER" required>
               <option selected>Name of engineer</option>
               <option>Amit Kumar</option>
               <option>Gautam Kumar</option>
@@ -63,7 +63,7 @@
 
           <div class="col-md-2">
             <label for="visitdate" class="form-label">Date of visit :</label>
-            <input type="date" class="form-control" id="visitdate" name="DOV">
+            <input type="date" class="form-control" id="visitdate" name="DOV" required>
           </div>
 
 
@@ -71,7 +71,7 @@
 
           <div class="col-md-3">
           <label for="earthpit" class="form-label">Seprate earthpit installed at site (Y/N) :</label>
-          <select id="earthpit" class="form-select" name="SEPERATE_EARTH_PIT_STATUS">
+          <select id="earthpit" class="form-select" name="SEPERATE_EARTH_PIT_STATUS" required>
             <option selected>Seperate earthpit status</option>
             <option>Yes</option>
             <option>No</option>
@@ -82,7 +82,7 @@
 
         <div class="col-md-3">
             <label for="blackrubber" class="form-label">Select Black rubber Qty :</label>
-            <select id="blackrubber" class="form-select" name="BLACK_RUBBER_STATUS">
+            <select id="blackrubber" class="form-select" name="BLACK_RUBBER_STATUS" required>
               <option selected>Black Rubber Qty.</option>
               <option>0</option>
               <option>2</option>
@@ -92,7 +92,7 @@
           <!-- Tank Loop wire status -->
           <div class="col-md-3">
             <label for="wireloop" class="form-label">Tank Wire looping status :</label>
-            <select id="wireloop" class="form-select" name="Tank_Wire_looping_status">
+            <select id="wireloop" class="form-select" name="Tank_Wire_looping_status" required>
               <option selected>Tank wire looped (Y/N).</option>
               <option>Yes</option>
               <option>No</option>
@@ -104,7 +104,7 @@
 
            <div class="col-md-3">
             <label for="noofDU" class="form-label">NO of DU  :</label>
-            <select id="noofDU" class="form-select" name="NoofDU">
+            <select id="noofDU" class="form-select" name="NoofDU" required>
               <option selected> Select Number of DU in site </option>
               <option>1</option>
               <option>2</option>
@@ -121,8 +121,8 @@
 
           <div class="col-md-3">
             <label for="noofDUinonline" class="form-label">NO of DU in online mode :</label>
-            <select id="noofDUinonline" class="form-select" name="NoofDUinonline">
-              <option selected> Select Number of DU in site </option>
+            <select id="noofDUinonline" class="form-select" name="NoofDUinonline" required>
+              <option selected> Select Number of DU in ONLINE MODE </option>
               <option>0</option>
               <option>1</option>
               <option>2</option>
@@ -138,7 +138,7 @@
       <!-- Ph-11 slave qty-->
       <div class="col-md-3">
         <label for="slave" class="form-label">Number of Phase -11 slave install :</label>
-        <select id="slave" class="form-select" name="Noofphase11slave">
+        <select id="slave" class="form-select" name="Noofphase11slave" required>
           <option selected>Select Phase-11 qty.</option>
           <option>0</option>
           <option>1</option>
@@ -154,13 +154,13 @@
       <!-- ATG Probe status -->
       <div class="col-md-3">
         <label for="atgproberequirment" class="form-label">ATG Probe required :</label>
-        <input type="text" class="form-control" id="atgproberequirment" name="Atgproberequirment" placeholder="@Probe Make->Probe Size->Product">
+        <input type="text" class="form-control" id="atgproberequirment" name="Atgproberequirment" placeholder="@Probe Make->Probe Size->Product" required>
       </div>
 
       <!-- Probe make in site -->
       <div class="col-md-3">
         <label for="wireloop" class="form-label">Probe Make in site :</label>
-        <select id="wireloop" class="form-select" name="Probemake">
+        <select id="wireloop" class="form-select" name="Probemake" required>
           <option selected>Select Probe Make</option>
           <option>SI</option>
           <option>SBEM</option>
@@ -176,7 +176,7 @@
 
       <div class="col-md-3">
         <label for="Battery" class="form-label">3.7 V LI Battery :</label>
-        <select id="Battery" class="form-select" name="Fccbattery">
+        <select id="Battery" class="form-select" name="Fccbattery" required>
           <option selected>Select qty of FCC battery</option>
           <option>0</option>
           <option>1</option>
@@ -188,7 +188,7 @@
 
       <div class="col-md-3">
         <label for="dealerkey" class="form-label">Dealer Key required (Y/N) :</label>
-        <select id="dealerkey" class="form-select" name="Dealerkey">
+        <select id="dealerkey" class="form-select" name="Dealerkey" required>
           <option selected>Dealer RFID key required (Y/N)</option>
           <option>YES</option>
           <option>NO</option>
@@ -201,7 +201,7 @@
        
       <div class="col-md-3">
         <label for="lanwire" class="form-label">LAN Wire (Per miter) :</label>
-        <select id="lanwire" class="form-select" name="Lanwire">
+        <select id="lanwire" class="form-select" name="Lanwire" required>
           <option selected>Select qty of lan wire (per miter)</option>
           <option>1</option>
           <option>2</option>
@@ -215,8 +215,9 @@
 
       <div class="col-md-3">
         <label for="FULLFCC" class="form-label">FCC FULL :</label>
-        <select id="FULLFCC" class="form-select" name="FULLFcc">
+        <select id="FULLFCC" class="form-select" name="FULLFcc" required>
           <option selected>Select qty of FULL FCC</option>
+          <option>NO</option>
           <option>1</option>
           <option>2</option>
         </select>
@@ -227,8 +228,9 @@
 
       <div class="col-md-3">
         <label for="BOSCARD" class="form-label">BOS CARD :</label>
-        <select id="BOSCARD" class="form-select" name="BOSCard">
+        <select id="BOSCARD" class="form-select" name="BOSCard" required>
           <option selected>Select qty of BOS CARD</option>
+          <option>NO</option>
           <option>1</option>
         </select>
       </div>
@@ -236,8 +238,9 @@
       <!-- INTERFACE CARD -->
       <div class="col-md-3">
         <label for="IOCARD" class="form-label">INTERFACE CARD :</label>
-        <select id="IOCARD" class="form-select" name="IOcard">
+        <select id="IOCARD" class="form-select" name="IOcard" required>
           <option selected>Select qty of IO CARD</option>
+          <option>NO</option>
           <option>1</option>
         </select>
       </div>
@@ -245,8 +248,9 @@
       <!-- 5V SMPS - PH-IX, PH-X, PH-XI, PH-XII -->
       <div class="col-md-3">
         <label for="SmallSMPS" class="form-label">5V SMPS - PH-IX, PH-X, PH-XI, PH-XII :</label>
-        <select id="SmallSMPS" class="form-select" name="Smallsmps">
+        <select id="SmallSMPS" class="form-select" name="Smallsmps" required>
           <option selected>Select qty of 05V SMPS</option>
+          <option>NO</option>
           <option>1</option>
           <option>2</option>
         </select>
@@ -255,8 +259,9 @@
       <!--12V SMPS - PH-IX, PH-X, PH-XI, PH-XII  -->
       <div class="col-md-3">
         <label for="12VSMPS" class="form-label">12V SMPS - PH-IX, PH-X, PH-XI, PH-XII :</label>
-        <select id="12VSMPS" class="form-select" name="LargeSMPS">
+        <select id="12VSMPS" class="form-select" name="LargeSMPS" required>
           <option selected>Select qty of 12V SMPS</option>
+          <option>NO</option>
           <option>1</option>
           <option>2</option>
         </select>
@@ -266,7 +271,7 @@
       <!-- RFID LOCK -->
       <div class="col-md-3">
         <label for="RFPCB" class="form-label">RFID LOCK :</label>
-        <select id="RFPCB" class="form-select" name="Rflock">
+        <select id="RFPCB" class="form-select" name="Rflock" required>
           <option selected>Select qty of RFID Lock REQUIRED</option>
           <option>NO</option>
           <option>1</option>
@@ -277,8 +282,9 @@
       <!-- RF LOCK PCB -->
       <div class="col-md-3">
         <label for="RFPCB" class="form-label">RF LOCK PCB :</label>
-        <select id="RFPCB" class="form-select" name="RFpcb">
+        <select id="RFPCB" class="form-select" name="RFpcb" required>
           <option selected>Select qty of RF Lock PCB</option>
+          <option>NO</option>
           <option>1</option>
         </select>
       </div>
@@ -287,7 +293,7 @@
 
       <div class="col-md-3">
         <label for="moniter" class="form-label">Moniter :</label>
-        <select id="moniter" class="form-select" name="Moniter">
+        <select id="moniter" class="form-select" name="Moniter" required>
           <option selected>Moniter is Required (Y/N)</option>
           <option>Yes</option>
           <option>No</option>
@@ -300,7 +306,7 @@
 
       <div class="col-md-3">
         <label for="KBMOUSE" class="form-label">KB/MOUSE :</label>
-        <select id="KBMOUSE" class="form-select" name="KBMouse">
+        <select id="KBMOUSE" class="form-select" name="KBMouse" required>
           <option selected>KB/MOUSE is Required (Y/N)</option>
           <option>Yes</option>
           <option>No</option>
@@ -311,7 +317,7 @@
 
       <div class="col-md-3">
         <label for="BARRIER" class="form-label">BARRIER CARD :</label>
-        <select id="BARRIER" class="form-select" name="Barrier">
+        <select id="BARRIER" class="form-select" name="Barrier" required>
           <option selected>BARRIER is Required (Y/N)</option>
           <option>Yes</option>
           <option>No</option>
@@ -323,7 +329,7 @@
 
       <div class="col-md-3">
         <label for="RFMASTER" class="form-label">RF MASTER :</label>
-        <select id="RFMASTER" class="form-select" name="RFmaster">
+        <select id="RFMASTER" class="form-select" name="RFmaster" required>
           <option selected>RF MASTER is Required (Y/N)</option>
           <option>Yes</option>
           <option>No</option>
@@ -334,7 +340,7 @@
 
          <div class="col-md-3">
             <label for="RFSLAVE" class="form-label">RF SLAVE - PH-11:</label>
-            <select id="RFSLAVE" class="form-select" name="RFSlave">
+            <select id="RFSLAVE" class="form-select" name="RFSlave" required>
               <option selected>PH-11 RF SLAVE qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -349,7 +355,7 @@
 
          <div class="col-md-3">
             <label for="ROUTER" class="form-label">ROUTER :</label>
-            <select id="ROUTER" class="form-select" name="Router">
+            <select id="ROUTER" class="form-select" name="Router" required>
               <option selected>ROUTER qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -361,7 +367,7 @@
 
          <div class="col-md-3">
             <label for="ADEPTER" class="form-label">ADEPTER :</label>
-            <select id="ADEPTER" class="form-select" name="Adepter">
+            <select id="ADEPTER" class="form-select" name="Adepter" required>
               <option selected>ADEPTER qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -371,7 +377,7 @@
           <!-- SPD -->
           <div class="col-md-3">
             <label for="SPD" class="form-label">SPD :</label>
-            <select id="SPD" class="form-select" name="Spd">
+            <select id="SPD" class="form-select" name="Spd" required>
               <option selected>SPD qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -381,7 +387,7 @@
           <!-- TOP LED CARD -->
           <div class="col-md-3">
             <label for="IOLED" class="form-label">TOP LED CARD :</label>
-            <select id="IOLED" class="form-select" name="IOled">
+            <select id="IOLED" class="form-select" name="IOled" required>
               <option selected>IO LED qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -391,7 +397,7 @@
           <!-- SLAVE FOR PRICE SIGNAGE(PYLON) -->
           <div class="col-md-3">
             <label for="PYLON" class="form-label">SLAVE FOR PRICE SIGNAGE(PYLON)  :</label>
-            <select id="PYLON" class="form-select" name="Pylon">
+            <select id="PYLON" class="form-select" name="Pylon" required>
               <option selected>PYLON SLAVE qty required </option>
               <option>NO</option>
               <option>1</option>
@@ -403,7 +409,7 @@
 
           <div class="col-md-3">
             <label for="FCCCARD" class="form-label">FCC CARD  :</label>
-            <select id="FCCCARD" class="form-select" name="FCCcard">
+            <select id="FCCCARD" class="form-select" name="FCCcard" required>
               <option selected>FCC CARD FAULTY AT SITE (Y/N) </option>
               <option>YES</option>
               <option>NO</option>
@@ -423,7 +429,7 @@
 
         <!-- RESET -->
         
-            <button type="reset" class="btn btn-outline-danger btn-lg">RESET</button>
+            <button type="reset" class="btn btn-outline-danger btn-lg">Eraise details</button>
           </div>
           
           <div class="text-center pt-4"><p>Copyright © 2023-24 Powered by Nikhil Trivedi <br> Version 28.05 </p></div>
