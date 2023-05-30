@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
+    <!-- App CSS -->
+
+    <link rel="stylesheet" href="./app.css">
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,18 +20,19 @@
 
     <title>Relcon AGS site visit details</title>
   </head>
-  <body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
+
+  <body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary ">
     <div class="container min-vh-100 d-flex justify-content-center align-items-center">
      
       <form class="row g-2 " method="post" action="https://script.google.com/macros/s/AKfycbw5o8ajIydP466X2yQFsaCREVcMB2oetAq78wOm76losBnZbucTFlFFp-j4TUuGKNywcw/exec">
         <h1 class="card-header">Fill site visit details :</h1>
         <div class="col-md-2 ">
           <label for="rocode" class="form-label">Ro Code :</label>
-          <input type="number" class="form-control" id="rocode" name="ROCODE" placeholder="14387560"  maxlength="8" required>
+          <input type="number" class="form-control" id="rocode" name="ROCODE" placeholder="@14387560"  maxlength="8" required>
         </div>
         <div class="col-md-6">
           <label for="roname" class="form-label">RO Name :</label>
-          <input type="text" class="form-control" id="roname" name="RONAME" placeholder="HAMARA PUMP PADAMPUR" required>
+          <input type="text" class="form-control" id="roname" name="RONAME" placeholder="@HAMARA PUMP PADAMPUR" required>
         </div>
 
 
@@ -52,7 +58,7 @@
 
         <div class="col-md-2">
             <label for="phase" class="form-label">Phase :</label>
-            <select id="phase" class="form-select" name="PHASE" required>
+            <select id="phase" class="form-select" name="PHASE"  required>
               <option value="" disabled  selected>Select Phase</option>
               <option>PH-X</option>
               <option>PH-XI</option>
@@ -82,7 +88,7 @@
 
           <div class="col-md-2">
             <label for="visitdate" class="form-label">Date of visit :</label>
-            <input type="date" class="form-control" id="visitdate" name="DOV" required>
+            <input type="date" class="form-control" id="visitdate" name="DOV"    required>
           </div>
 
 
@@ -92,8 +98,8 @@
           <label for="earthpit" class="form-label">Seprate earthpit installed at site (Y/N) :</label>
           <select id="earthpit" class="form-select" name="SEPERATE_EARTH_PIT_STATUS" required>
             <option value="" disabled  selected>Seperate earthpit status</option>
-            <option>Yes</option>
-            <option>No</option>
+            <option>YES</option>
+            <option>NO</option>
           </select>
         </div>
 
@@ -112,8 +118,8 @@
             <label for="wireloop" class="form-label">Tank Wire looping status :</label>
             <select id="wireloop" class="form-select" name="Tank_Wire_looping_status" required>
               <option value="" disabled  selected>Tank wire looped (Y/N).</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option>YES</option>
+              <option>NO</option>
             </select>
           </div>
 
@@ -313,8 +319,8 @@
         <label for="moniter" class="form-label">Moniter :</label>
         <select id="moniter" class="form-select" name="Moniter" required>
           <option value="" disabled  selected>Moniter is Required (Y/N)</option>
-          <option>Yes</option>
-          <option>No</option>
+          <option>YES</option>
+          <option>NO</option>
         </select>
       </div>
 
@@ -326,8 +332,8 @@
         <label for="KBMOUSE" class="form-label">KB/MOUSE :</label>
         <select id="KBMOUSE" class="form-select" name="KBMouse" required>
           <option value="" disabled  selected>KB/MOUSE is Required (Y/N)</option>
-          <option>Yes</option>
-          <option>No</option>
+          <option>YES</option>
+          <option>NO</option>
         </select>
       </div>
 
@@ -337,8 +343,8 @@
         <label for="BARRIER" class="form-label">BARRIER CARD :</label>
         <select id="BARRIER" class="form-select" name="Barrier" required>
           <option value="" disabled  selected>BARRIER is Required (Y/N)</option>
-          <option>Yes</option>
-          <option>No</option>
+          <option>YES</option>
+          <option>NO</option>
         </select>
       </div>
 
@@ -349,8 +355,8 @@
         <label for="RFMASTER" class="form-label">RF MASTER :</label>
         <select id="RFMASTER" class="form-select" name="RFmaster" required>
           <option value="" disabled  selected>RF MASTER is Required (Y/N)</option>
-          <option>Yes</option>
-          <option>No</option>
+          <option>YES</option>
+          <option>NO</option>
         </select>
       </div>
 
@@ -442,15 +448,16 @@
 
       <!-- Submit details -->
         <div class="d-grid gap-2 col-6 mx-auto mt-4">
-          <button type="submit" class="btn btn-outline-success btn-lg">Submit Details</button>
+          <!-- <button type="submit" class="btn btn-outline-success btn-lg">Submit Details</button> -->
+          <button type="submit" id="calc-btn" class="btn-lg">Submit</button>
     
 
         <!-- RESET -->
         
-            <button type="reset" class="btn btn-outline-danger btn-lg">Eraise details</button>
+            <button type="reset" id="calc-btn1">Eraise</button>
           </div>
           
-          <div class="text-center pt-4"><p>Copyright © 2023-24 Powered by Nikhil Trivedi <br> Version 29.05 </p></div>
+          <div class="text-center pt-4"><p>Copyright © 2023-24 Powered by Nikhil Trivedi <br> Version 30.05 </p></div>
 
       </form>
     </div>
